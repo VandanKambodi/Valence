@@ -193,10 +193,10 @@ export default function LandingPage() {
       {/* --- NEW, PROFESSIONAL FOOTER --- */}
       <footer className="bg-gradient-to-t from-[#192313] to-[#121A0E] text-gray-300 border-t border-white/10">
         <AnimatedSection>
-          <div className="container mx-auto py-12 px-6">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="container mx-auto w-full py-12 px-8 flex flex-col items-center">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl">
               
-              <div className="col-span-1 md:col-span-2">
+              <div className="w-full">
                 <Link href="/" className="inline-block mb-4">
                   <Image src="/logo-withoutBg.png" alt="Valence Logo" width={120} height={34} />
                 </Link>
@@ -205,16 +205,16 @@ export default function LandingPage() {
                 </p>
               </div>
 
-              <div>
+              <div className="w-full ">
                 <h3 className="font-semibold text-white tracking-wider uppercase">Quick Links</h3>
-                <ul className="mt-4 space-y-2">
+                <ul className="mt-4 space-y-2 ">
                   <li><Link href="/about" className="hover:text-green-400 transition-colors">About Us</Link></li>
                   <li><Link href="/map" className="hover:text-green-400 transition-colors">Platform</Link></li>
                   <li><Link href="/contact" className="hover:text-green-400 transition-colors">Contact</Link></li>
                 </ul>
               </div>
 
-              <div>
+              <div className="w-full">
                 <h3 className="font-semibold text-white tracking-wider uppercase">Legal</h3>
                 <ul className="mt-4 space-y-2">
                   <li><a href="#" className="hover:text-green-400 transition-colors">Privacy Policy</a></li>
@@ -222,17 +222,21 @@ export default function LandingPage() {
                 </ul>
               </div>
 
+              <div className="w-full">
+                <h3 className="font-semibold text-white tracking-wider uppercase mb-4">OUR PAGES</h3>
+                <div className="flex space-x-4 space-y-2 mt-4 sm:mt-0 flex-row">
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><TwitterIcon /></a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><LinkedInIcon /></a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><GithubIcon /></a>
+                </div>
+              </div>
+
             </div>
 
-            <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center">
+            <div className="w-full mt-12 pt-8 border-t max-w-7xl border-white/10 flex flex-col sm:flex-row justify-between items-center">
               <p className="text-sm text-gray-500">
                 &copy; {new Date().getFullYear()} Valence. All Rights Reserved.
               </p>
-              <div className="flex space-x-4 mt-4 sm:mt-0">
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><TwitterIcon /></a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><LinkedInIcon /></a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><GithubIcon /></a>
-              </div>
             </div>
           </div>
         </AnimatedSection>
