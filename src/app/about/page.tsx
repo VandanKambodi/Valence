@@ -60,7 +60,7 @@ export default function AboutPage() {
     <PublicLayout>
       {/* Full-Screen Hero Section */}
       <section className="relative h-screen flex flex-col items-center justify-center text-center bg-[url('/bgImg.png')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 "></div>
 
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}

@@ -19,7 +19,7 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
         className="fixed top-0 z-50 w-full p-2 transition-colors duration-300"
       >
         <div
-          className="max-w-7xl bg-white/5 border rounded-xl border-white/20 container mx-auto px-6 py-4 flex justify-between items-center backdrop-blur-sm transition-shadow duration-300"
+          className="max-w-7xl bg-white/5 border rounded-xl border-white/30 container mx-auto px-6 py-4 flex justify-between items-center backdrop-blur-xs transition-shadow duration-300"
           style={{
             boxShadow: scrolled ? '0 4px 30px rgba(0, 0, 0, 0.1)' : 'none',
           }}
@@ -28,7 +28,7 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
             <Image src="/logo-withoutBg.png" alt="Valence Logo" width={100} height={28} />
           </Link>
           <nav className="space-x-6 flex items-center">
-            <Link href="/about" className="text-gray-300 hover:text-white transition-colors">
+            <Link href="/about" className="text-green-400 hover:text-white transition-colors">
               About Us
             </Link>
             <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">

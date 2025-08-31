@@ -32,7 +32,7 @@ export default function LandingPage() {
     <div className="min-h-screen flex flex-col bg-[#192313] text-white">
       <div className="p-2 bg-[url('/bgImg.png')] bg-cover bg-center min-h-screen flex flex-col items-center">
         {/* --- YOUR HEADER - UNCHANGED --- */}
-        <header className="fixed top-2 z-50 w-full max-w-7xl bg-white/20 border rounded-xl border-white/30 container mx-auto px-6 py-4 flex justify-between items-center backdrop-blur-sm">
+        <header className="fixed top-2 z-50 w-full max-w-7xl bg-white/5 border rounded-xl border-white/30 container mx-auto px-6 py-4 flex justify-between items-center backdrop-blur-xs">
             <Link href="/"><Image src="/logo-withoutBg.png" alt="Valence Logo" width={100} height={28} /></Link>
             <nav className="space-x-6 flex items-center">
               <Link href="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link>

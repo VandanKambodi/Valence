@@ -46,11 +46,11 @@ export default function ContactPage() {
     // --- YOUR MAIN CONTAINER - UNCHANGED ---
     <div className="p-2 bg-[url('/bgImg.png')] bg-cover bg-center min-h-screen flex flex-col items-center text-white">
       {/* --- YOUR HEADER - UNCHANGED --- */}
-      <header className="fixed top-2 z-50 w-full max-w-7xl bg-white/20 border rounded-xl border-white/30 container mx-auto px-6 py-4 flex justify-between items-center backdrop-blur-sm">
+      <header className="fixed top-2 z-50 w-full max-w-7xl bg-white/5 border rounded-xl border-white/30 container mx-auto px-6 py-4 flex justify-between items-center backdrop-blur-xs">
         <Link href="/"><Image src="/logo-withoutBg.png" alt="Valence Logo" width={100} height={28} /></Link>
         <nav className="space-x-6 flex items-center">
           <Link href="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link>
-          <Link href="/contact" className="text-green-400 font-semibold transition-colors hover:text-white">Contact Us</Link>
+          <Link href="/contact" className="text-green-400  transition-colors hover:text-white">Contact Us</Link>
           <Link href="/auth?mode=login" className="text-gray-300 hover:text-white transition-colors">Login</Link>
           <Link href="/auth?mode=signup" className="bg-green-600 hover:bg-green-700 text-white/80 font-bold py-2 px-4 rounded-lg transition-colors">Sign Up</Link>
         </nav>
@@ -71,7 +71,7 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 p-8 bg-white/5 border border-white/20 rounded-2xl shadow-2xl backdrop-blur-lg">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 p-8 bg-white/5 border border-white/30 rounded-2xl shadow-2xl backdrop-blur-md">
 
             {/* --- REPLACED "ABOUT VALENCE" SECTION --- */}
             <div className="space-y-8">
