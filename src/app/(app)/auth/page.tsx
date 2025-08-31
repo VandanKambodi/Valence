@@ -89,9 +89,9 @@ function AuthComponent() {
 
   return (
     <div className="bg-[url('/bgImg.png')] bg-cover bg-center min-h-screen flex items-center justify-center p-4 font-sans">
-      <div className="w-full max-w-4xl min-h-[400px] relative bg-[#141d10] rounded-2xl shadow-2xl flex overflow-hidden">
+      <div className="w-full max-w-4xl min-h-[400px] relative rounded-2xl shadow-2xl flex overflow-hidden">
         
-        <div className="w-1/2 p-8 flex flex-col justify-center bg-gradient-to-br from-[#192313] to-[#2D4323] ">
+        <div className="w-1/2 p-8 flex flex-col justify-center bg-white/5 border border-white/30 rounded-2xl shadow-2xl backdrop-blur-md ">
             <div className="text-center mb-6 border border-white/30 bg-white/20 p-4 rounded-xl">
               <h2 className="text-3xl font-bold text-white">Create Account</h2>
             </div>
@@ -106,7 +106,7 @@ function AuthComponent() {
               </div>
               <div>
                 <label htmlFor="signupPassword" className="block text-sm font-medium text-white/80">Password</label>
-                <input type="password" id="signupPassword" value={signupPassword} onChange={(e) => setSignupPassword(e.target.value)} required className="mt-1 block w-full px-3 py-2 bg-white/10 text-white border border-white/20 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" placeholder="A Strong Password"/>
+                <input type="password" id="signupPassword" value={signupPassword} onChange={(e) => setSignupPassword(e.target.value)} required className="mt-1 block w-full px-3 py-2 bg-white/10 text-white border border-white/20 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" placeholder="a strong password"/>
               </div>
               {signupError && <p className="text-red-400 text-sm text-center">{signupError}</p>}
               <button type="submit" disabled={isSignupSubmitting} className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 disabled:opacity-50">
@@ -116,7 +116,7 @@ function AuthComponent() {
         </div>
 
 
-        <div className="w-1/2 p-8 flex flex-col justify-center bg-gradient-to-br from-[#192313] to-[#2D4323]">
+        <div className="w-1/2 p-8 flex flex-col justify-center bg-white/5 border border-white/30 rounded-2xl shadow-2xl backdrop-blur-md">
             <div className="text-center mb-6 border border-white/30 bg-white/20 rounded-xl p-4">
               <h2 className="text-3xl font-bold text-white">Log In</h2>
             </div>
@@ -127,7 +127,7 @@ function AuthComponent() {
               </div>
               <div>
                 <label htmlFor="loginPassword" className="block text-sm font-medium text-white/80">Password</label>
-                <input type="password" id="loginPassword" value={loginPassword} onChange={(e) => setLoginPassword(e.target.value)} required className="mt-1 block w-full px-3 py-2 bg-white/10 text-white border border-white/20 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" placeholder="Check Your Remembarance"/>
+                <input type="password" id="loginPassword" value={loginPassword} onChange={(e) => setLoginPassword(e.target.value)} required className="mt-1 block w-full px-3 py-2 bg-white/10 text-white border border-white/20 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" placeholder="check your remembarance"/>
               </div>
               {loginError && <p className="text-red-400 text-sm text-center">{loginError}</p>}
               <button type="submit" disabled={isLoginSubmitting} className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 disabled:opacity-50">

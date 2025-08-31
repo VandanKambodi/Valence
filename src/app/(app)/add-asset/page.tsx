@@ -59,11 +59,11 @@ export default function AddAssetPage() {
   };
 
   return (
-    <div className="bg-gradient-to-tl from-gray-700 to-gray-400 [url('/bgImg.png')] flex-grow">
+    <div className="bg-gradient-to-tl from-gray-700 to-gray-400 flex-grow">
       <div className="container mx-auto px-6 py-12">
         <div className="max-w-2xl mx-auto">
 
-            <form onSubmit={handleSubmit} className="space-y-6 bg-gradient-to-br from-gray-800 to-gray-700 p-8 rounded-xl shadow-mlg">
+            <form onSubmit={handleSubmit} className="space-y-6 bg-gradient-to-br from-gray-800 to-gray-700 p-8 rounded-xl shadow-lg">
               <div className="bg-white/20 border border-white/30 rounded-xl pt-4">
                 <h1 className="text-3xl font-bold text-white mb-4 text-center">Add a New Asset</h1>
                 <p className="text-center text-white/80 mb-4">
