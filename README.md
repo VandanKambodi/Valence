@@ -150,16 +150,16 @@ RESEND_API_KEY=generate_resend_api_key
 ##  Contributing
 - Contributions are welcome! To contribute:
 
-1. Fork the repo
+1. Fork the repository
 2. Create a new branch (`git checkout -b feature-name`)
 3. Commit changes (`git commit -m 'Add feature'`)
 4. Push to your branch (`git push origin feature-name`)
-5. Open a Pull Request 🎉
+5. Open a Pull Request
 
 
 ##  License
 This project is licensed under the **MIT License**.
 
-<p align="center">
+<p align="left">
   <img src="https://img.shields.io/github/license/vandankambodi/valence?style=for-the-badge" alt="MIT License" />
 </p>
