@@ -160,6 +160,4 @@ RESEND_API_KEY=generate_resend_api_key
 ##  License
 This project is licensed under the **MIT License**.
 
-<p align="left">
-  <img src="https://img.shields.io/github/license/vandankambodi/valence?style=for-the-badge" alt="MIT License" />
-</p>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
