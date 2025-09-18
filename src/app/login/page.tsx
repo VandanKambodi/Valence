@@ -21,6 +21,7 @@ export default function LoginPage() {
       redirect: false,
       email,
       password,
+      callbackUrl: "/map",
     });
 
     if (result?.error) {
