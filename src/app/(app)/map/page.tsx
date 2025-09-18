@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import AssetSidebar from '@/components/AssetSidebar';
 import { IAsset } from '@/models/Asset';
+import { Suspense } from 'react';
 
 interface ApiResponse {
   success: boolean;
@@ -103,6 +104,7 @@ export default function MapPage() {
 
   // Your JSX return statement remains exactly the same
   return (
+    <Suspense fallback={<div>Loading Map Page...</div>}>
     <div className="flex h-full w-full">
       {(status === 'success' || status === 'no-data' || status === 'loading') && (
         <AssetSidebar
@@ -123,5 +125,6 @@ export default function MapPage() {
         />
       </div>
     </div>
+    </Suspense>
   );
 }
