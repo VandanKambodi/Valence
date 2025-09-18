@@ -4,7 +4,7 @@ import dbConnect from '@/lib/mongodb';
 import User from '@/models/User';
 import bcrypt from 'bcryptjs';
 
-// We export the authOptions object to use it in our other API routes
+// Export the authOptions object to use it in other API routes
 export const authOptions: NextAuthOptions = {
   providers: [
     CredentialsProvider({
@@ -53,6 +53,13 @@ export const authOptions: NextAuthOptions = {
         (session.user as { id?: string }).id = token.id as string;
       }
       return session;
+    },
+    async redirect({ url, baseUrl }) {
+      // If user tries to go to an absolute URL on same domain
+      if (url.startsWith(baseUrl)) return url;
+      // If login is successful, always redirect to dashboard
+      if (url === '/login') return `${baseUrl}/dashboard`;
+      return baseUrl;
     },
   },
   secret: process.env.NEXTAUTH_SECRET,
